@@ -1,0 +1,93 @@
+.camera-feed {
+  overflow: hidden;
+  padding: 0;
+}
+
+.camera-feed__viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-secondary);
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.camera-feed__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-feed__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Overlays */
+.camera-feed__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  background: rgba(6, 7, 13, 0.85);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.camera-feed__overlay--loading {
+  background: rgba(6, 7, 13, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.camera-feed__overlay--error {
+  background: rgba(6, 7, 13, 0.85);
+  color: var(--accent-danger);
+}
+
+.camera-feed__icon {
+  font-size: 3rem;
+  opacity: 0.6;
+}
+
+.camera-feed__hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Footer */
+.camera-feed__footer {
+  padding: 0.65rem var(--space-lg);
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(108,92,231,0.1);
+}
+
+.camera-feed__model-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.camera-feed__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.camera-feed__dot--green {
+  background: var(--accent-success);
+  box-shadow: 0 0 8px rgba(0,184,148,0.5);
+  animation: pulse-glow 2s ease-in-out infinite;
+}

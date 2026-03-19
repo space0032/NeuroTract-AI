@@ -1,0 +1,50 @@
+{
+  "video": "demo_intersection",
+  "events": [
+    {
+      "frame": 150,
+      "timestamp_ms": 5000,
+      "event_type": "pedestrian_entry",
+      "object_class": "person",
+      "confidence": 0.89,
+      "bbox": { "x1": 420, "y1": 300, "x2": 480, "y2": 450 },
+      "description": "Pedestrian entering crosswalk from left side"
+    },
+    {
+      "frame": 210,
+      "timestamp_ms": 7000,
+      "event_type": "vehicle_approach",
+      "object_class": "car",
+      "confidence": 0.95,
+      "bbox": { "x1": 200, "y1": 250, "x2": 400, "y2": 400 },
+      "description": "Vehicle approaching intersection at high speed"
+    },
+    {
+      "frame": 300,
+      "timestamp_ms": 10000,
+      "event_type": "pedestrian_entry",
+      "object_class": "person",
+      "confidence": 0.78,
+      "bbox": { "x1": 550, "y1": 320, "x2": 600, "y2": 460 },
+      "description": "Child running across road near school zone"
+    },
+    {
+      "frame": 450,
+      "timestamp_ms": 15000,
+      "event_type": "vehicle_approach",
+      "object_class": "truck",
+      "confidence": 0.92,
+      "bbox": { "x1": 100, "y1": 200, "x2": 350, "y2": 420 },
+      "description": "Heavy truck merging into lane without signal"
+    },
+    {
+      "frame": 540,
+      "timestamp_ms": 18000,
+      "event_type": "pedestrian_entry",
+      "object_class": "person",
+      "confidence": 0.85,
+      "bbox": { "x1": 380, "y1": 280, "x2": 430, "y2": 440 },
+      "description": "Pedestrian jaywalking at unmarked crossing"
+    }
+  ]
+}
